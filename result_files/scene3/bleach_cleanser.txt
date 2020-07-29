@@ -1,0 +1,22 @@
+iteration_number/ 5
+estimated_q_rotation/ [ 0.84835519 -0.47653919 -0.21544643  0.08238154]
+translation_difference/ [ 0.05617648  0.00059803 -0.01241165]
+rotation_difference/ [-0.50135519 -0.19546081 -0.16255357  0.45061846]
+iteration_number/ 5
+estimated_q_rotation/ [ 0.07253654  0.19543276 -0.28861577  0.93447602]
+translation_difference/ [ 0.00595507  0.00381068 -0.04052173]
+rotation_difference/ [ 0.27446346 -0.86743276 -0.08938423 -0.40147602]
+iteration_number/ 5
+estimated_q_rotation/ [ 0.98460729  0.16267517  0.03011803 -0.05637536]
+translation_difference/ [0.03623792 0.00370346 0.10033427]
+rotation_difference/ [-0.63760729 -0.83467517 -0.40811803  0.58937536]
+iteration_number/ 5
+estimated_q_rotation/ [ 0.91668577  0.16998288 -0.32979311 -0.14842342]
+translation_difference/ [ 0.02151649 -0.00243651 -0.03070783]
+rotation_difference/ [-0.56968577 -0.84198288 -0.04820689  0.68142342]
+iteration_number/ 5
+estimated_q_rotation/ [ 0.89721193 -0.26987326  0.10777822 -0.33251021]
+translation_difference/ [ 0.02332767 -0.00641316 -0.01951175]
+rotation_difference/ [-0.55021193 -0.40212674 -0.48577822  0.86551021]
+avg_translation_difference/ [ 0.02864273 -0.0001475  -0.00056374]
+avg_rotation_difference/ [-0.39687934 -0.62833567 -0.23880819  0.43709029]
