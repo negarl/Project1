@@ -4,6 +4,44 @@ import pywavefront
 from mask_pointcloud_joint import object_point_cloud
 
 
+def read_pose_file(scene_folder_path):
+
+    pose_file_path = os.path.join(scene_folder_path,"poses.txt")
+
+    translation_dic = {}
+    rotation_q_dic = {}
+
+    with open(pose_file_path, 'r') as reader:
+        contain_name_line = reader.readline()
+        while contain_name_line != '':
+
+            if contain_name_line == '\n':
+                contain_name_line = reader.readline()
+                continue
+
+            name_separated = contain_name_line.split("/")[-1].split("_")[1:]
+            name = '_'.join([str(elem) for elem in name_separated])[:-1]
+
+            translation_dic.setdefault(name)
+            rotation_q_dic.setdefault(name)
+
+            translation = reader.readline().replace("]", "").split("[")[1][:-1].split(",")
+            translation_array = [float(t) for t in translation]
+            rotation_q = reader.readline().replace("]", "").split("[")[1][:-1].split(",")
+            rotation_q_array = [float(t) for t in rotation_q]
+
+            translation_dic[name] = translation_array
+            rotation_q_dic[name] = rotation_q_array
+
+            # These may needed later
+            rotation_r = reader.readline()
+            rotation_d = reader.readline()
+
+            contain_name_line = reader.readline()
+
+    return translation_dic, rotation_q_dic
+
+
 def read_model_object_points(object_name, models_folder_path):
     """
 
