@@ -1,5 +1,5 @@
 import math
-
+import os
 import cv2
 import numpy as np
 import open3d as o3d
@@ -62,7 +62,7 @@ def point_cloud_to_image(scene_point_cloud_file_path):
     return point_cloud_image
 
 
-def point_cloud_array_to_image(scene_point, scene_colour):
+def point_cloud_array_to_image(scene_point, scene_colour, object_name, scene_name):
     """
     Convert scene point clouds to image of the scene and save the image with name "point_cloud_image.jpg"
     :param scene_point: Scene point clouds array
@@ -84,7 +84,9 @@ def point_cloud_array_to_image(scene_point, scene_colour):
         RGB_color = (scene_colour[idx] * 255)
         point_cloud_image[v][u] = RGB_color
 
-    cv2.imwrite("point_cloud_image.jpg", point_cloud_image)
+    file_name = object_name + ".jpg"
+    folder_path = "/home/user/PycharmProjects/TEASERPP/mask_point_picture/" + scene_name
+    cv2.imwrite(os.path.join(folder_path,file_name), point_cloud_image)
 
     return point_cloud_image
 
