@@ -1,0 +1,12 @@
+potted_meat_can
+estimated_q_rotation/[ 0.8522438  -0.02088808 -0.04870401  0.52045376]
+translation_difference/[ 0.01231084 -0.01217376  0.01778831]
+rotation_difference/[-1.0502438   0.90288808 -0.36929599 -0.60845376]
+bleach_cleanser
+estimated_q_rotation/[-0.33257227  0.82615448 -0.43504687 -0.13266001]
+translation_difference/[ 0.01264261 -0.02953159  0.03891145]
+rotation_difference/[ 1.16857227 -1.15015448  0.58404687  0.55066001]
+mustard_bottle
+estimated_q_rotation/[-0.35855102  0.79639075 -0.29387319 -0.38838317]
+translation_difference/[-0.00333671  0.00098607  0.00893818]
+rotation_difference/[ 0.47055102  0.09560925 -0.13912681  0.46038317]

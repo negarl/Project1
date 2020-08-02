@@ -1,0 +1,12 @@
+tomato_soup_can
+estimated_q_rotation/[ 0.14260274  0.8756317   0.13473767 -0.44133813]
+translation_difference/[ 0.01122027 -0.00548215  0.0212586 ]
+rotation_difference/[-0.13860274  0.0283683  -0.56173767  0.46233813]
+potted_meat_can
+estimated_q_rotation/[0.18026679 0.75663692 0.36476264 0.51181312]
+translation_difference/[ 0.01709475 -0.01912963  0.0228574 ]
+rotation_difference/[ 0.52173321 -1.01663692  0.22723736 -0.81081312]
+bleach_cleanser
+estimated_q_rotation/[0.24074175 0.24661306 0.34898039 0.87145746]
+translation_difference/[0.01917043 0.00610665 0.00828173]
+rotation_difference/[ 0.10925825 -0.84261306 -0.67298039 -0.22545746]
